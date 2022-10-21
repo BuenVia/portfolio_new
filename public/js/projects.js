@@ -12,8 +12,8 @@ const projects = [
     title: "ARC Support Services 🚗",
     content:
       "Website for ARC Support Services built using HTML, CSS, JS and PHP.",
-    site: "http://arcsupportservices.co.uk/",
-    gitHub: "https://github.com/BuenVia/ARCSupportServices",
+    site: "https://arcsupportservices.herokuapp.com/",
+    gitHub: "https://github.com/BuenVia/arc_new",
     __v: 0
   },
   {

@@ -4,7 +4,11 @@ const bodyParser = require("body-parser");
 require("dotenv").config();
 
 const app = express();
-const port = 3000;
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+app.listen(port);
 const pageRouter = require("./routes/pageRouter");
 const adminRouter = require("./routes/adminRouter");
 const apiRouter = require("./routes/apiRouter");

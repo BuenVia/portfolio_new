@@ -91,6 +91,16 @@ body {
   border-radius: 100%;
 }
 
+.email-link {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px){
+  .navbar-brand {
+    font-size: 12px;
+  }
+}
+
 main {
   padding-bottom: 5rem;
 }

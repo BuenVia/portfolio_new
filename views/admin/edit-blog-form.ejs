@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+    <form action="/admin/edit-blog" method="POST">
+        <div>
+            <input type="text" class="form-control" name="id" value="<%= blog._id %>" hidden>
+        </div>
+        <div>
+            <label for="" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" value="<%= blog.title %>">
+        </div>
+        <div>
+            <label for="" class="form-label">Author</label>
+            <input type="text" class="form-control" name="auth" value="<%= blog.auth %>">
+        </div>
+        <div>
+            <label for="" class="form-label">Content</label>
+            <textarea class="form-control" name="content"><%= blog.content %></textarea>
+        </div>
+       
+        <button type="submit">Update</button>
+    </form>
+
+<%- include('partials/footer') %> 

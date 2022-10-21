@@ -1,0 +1,104 @@
+<%- include('partials/header') %> 
+
+<main>
+
+    <div class="row intro-container mt-4">
+        <!--PROFILE-->
+        <div class="col-md-8 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">About</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="/assets/profile.jpg" class="card-img-top prof-img" alt="Profile Pic">
+                        </div>
+                        <div class="col-9 intro">
+                            <p>Hi, I am Matt 👋. A self-taught WebDev with a passion for code 💻. I have been self-teaching myself JavaScript, HTML, CSS, NodeJS and React with a strong desire to move into a career in coding 👨‍💻.</p>
+                            <p>If you want me to build your website or webapp, or you want to collaborate, then get in touch! 🗣️ </p>
+                            <p>📧 Email: matthewclifford@hotmail.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--LANGUAGES-->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Languages & Frameworks</h5>
+                </div>
+                <div class="card-body">
+                    <div class=" mt-1"><p><i class="fa-brands fa-html5"></i> HTML</p></div>
+                    <div class=" mt-1"><P><i class="fa-brands fa-css3-alt"></i> CSS</P></div>
+                    <div class=" mt-1"><p><i class="fa-brands fa-square-js"></i> JavaScript</p></div>
+                    <div class=" mt-1"><p><i class="fa-brands fa-react"></i> React</p></div>
+                    <div class=" mt-1"><p><i class="fa-brands fa-bootstrap"></i> BootStrap</p></div>
+                    <div class=" mt-1"><p><i class="fa-brands fa-node-js"></i> Node JS</p></div>
+                    <div class=" mt-1"><p><i class="fa-solid fa-database"></i> MongoDB</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PROJECTS--> 
+    <div class="row mt-4 mb-3">
+        <div class="col-md-8 mb-4">
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="card-title">Projects</h5>
+                </div>
+
+                <div class="card-body">
+                    <% projects.forEach(project => { %>
+                        <div class="item-container">
+
+                            <h5 class="card-title"><%= project.title %></h5>
+                            <p class="card-text"><%= project.content %></p>
+                            <div class="card-btn-cont">
+                                <a href="<%= project.site %> " target="_blank" rel="noopener noreferrer"><button class="btn btn-sm btn-st"><i class="fa-solid fa-laptop-code"></i> Site</button></a>
+                                <a href="<%= project.gitHub %>" target="_blank" rel="noopener noreferrer"><button class="btn btn-sm btn-st"><i class="fa-brands fa-github"></i> Github</button></a>
+                            </div>
+                        </div>
+                    <% }) %> 
+                </div>
+
+            </div>
+        
+    
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md">
+                        <div class="card-header">
+                                <h5 class="card-title">Latest Blog Post</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <% blogPosts.forEach(post => { %>
+                                <div class="item-container">
+                                    
+                                    <h4 class="card-title"><%= post.title %></h4>
+                                    <p><%= post.date.toLocaleString('en-GB') %></p>
+                                    <p class="card-text"><%= post.content.substring(0, 100) %>...</p>
+                                    <a href="/blog" class="btn btn-sm btn-st">Read more</a>
+                                    
+                        </div>
+                        <% }) %>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</main>
+
+<%- include('partials/footer') %> 

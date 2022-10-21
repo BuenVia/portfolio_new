@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaracensFan/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaracensFan/portfolio/issues"
+  },
+  "homepage": "https://github.com/SaracensFan/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dependencies": "^0.0.1",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "marked": "4.1.1",
+    "mongoose": "^6.6.1"
+  },
+  "devDependencies": {
+    "ejs-lint": "^1.2.2",
+    "nodemon": "^2.0.20"
+  }
+}

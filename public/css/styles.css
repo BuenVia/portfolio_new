@@ -1,0 +1,107 @@
+:root {
+  --bkg-clr: rgb(238, 238, 238);
+  --card-bkg-clr: rgb(255, 255, 255);
+  --txt-clr: rgb(44, 44, 44);
+  --trim-clr: rgb(119, 82, 183);
+  --btn-hover-clr: rgb(116, 91, 205);
+  --txt-hover-clr: rgb(200, 200, 180);
+  --alt-border-clr: rgb(24, 24, 24);
+  --alt-shadow-clr: rgb(119, 82, 183);
+}
+
+body {
+  background-color: var(--bkg-clr);
+  font-family: "Rubik", sans-serif;
+  color: var(--txt-clr);
+  position: relative;
+  min-height: 100vh;
+}
+
+.intro {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.title {
+  margin: 4rem;
+  text-align: center;
+  color: var(--txt-clr);
+}
+
+.card {
+  height: 100%;
+  background-color: var(--card-bkg-clr);
+  color: var(--txt-clr);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  transition: 150ms;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card h5 {
+  font-size: 24px;
+}
+
+.card p {
+  color: var(--txt-clr);
+}
+
+.item-container {
+  padding: 1rem;
+  border-bottom: 1px solid var(--trim-clr);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  padding: 2rem;
+  background-color: var(--trim-clr);
+}
+.navbar-brand {
+  font-size: 36px;
+  color: white;
+}
+
+.btn-sm {
+  background-color: var(--trim-clr);
+  color: white;
+}
+
+.btn-sm:hover {
+  transition: 500ms;
+  background-color: var(--btn-hover-clr);
+  color: var(--txt-hover-clr);
+}
+
+.img-height {
+  height: 100%;
+}
+
+.prof-img {
+  border-radius: 100%;
+}
+
+main {
+  padding-bottom: 5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

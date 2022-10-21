@@ -1,0 +1,9 @@
+<!--ADMIN PAGE-->
+<%- include('partials/header') %> 
+
+<% projects.forEach(project => { %>
+    <p><a href="/admin/edit-project/<%= project._id %>"><%= project.title %></a></p>
+<% }) %>
+
+<!--ADMIN PAGE-->
+<%- include('partials/footer') %> 

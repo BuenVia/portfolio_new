@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+    <form action="/admin/edit-project" method="POST">
+        <div>
+            <input type="text" class="form-control" name="id" value="<%= project._id %>" hidden>
+        </div>
+        <div>
+            <label for="" class="form-label">Title</label>
+            <input type="text" class="form-control" name="title" value="<%= project.title %>">
+        </div>
+        <div>
+            <label for="" class="form-label">Content</label>
+            <textarea class="form-control" name="content"><%= project.content %></textarea>
+        </div>
+        <div>
+            <label for="" class="form-label">Site</label>
+            <input type="text" class="form-control" name="site" value="<%= project.site %>">
+        </div>
+        <div>
+            <label for="" class="form-label">GitHub</label>
+            <input type="text" class="form-control" name="gitHub" value="<%= project.gitHub %>">
+        </div>
+        <div>
+            <label for="" class="form-label">Img</label>
+            <input type="text" class="form-control" name="img" value="<%= project.img %>">
+        </div>
+        <button type="submit">Update</button>
+    </form>
+
+<%- include('partials/footer') %> 

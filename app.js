@@ -8,7 +8,6 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
-app.listen(port);
 const pageRouter = require("./routes/pageRouter");
 const adminRouter = require("./routes/adminRouter");
 const apiRouter = require("./routes/apiRouter");

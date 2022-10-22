@@ -19,22 +19,22 @@ const projects = [
   {
     title: "Country Cards 🌍",
     content: "A note taking app built using React. ",
-    site: "https://keep-app-react.netlify.app/",
-    gitHub: "https://vb5ubf-3000.preview.csb.app/",
+    site: "https://countrycard.netlify.app/",
+    gitHub: "https://github.com/BuenVia/countries-finder",
     __v: 0
   },
   {
     title: "Weather App 🌦",
     content: "A note taking app built using React. ",
-    site: "https://keep-app-react.netlify.app/",
-    gitHub: "https://vb5ubf-3000.preview.csb.app/",
+    site: "https://previsto.netlify.app/",
+    gitHub: "https://github.com/BuenVia/weatherReact",
     __v: 0
   },
   {
     title: "Note App 🗈",
     content: "A note taking app built using React. ",
     site: "https://keep-app-react.netlify.app/",
-    gitHub: "https://vb5ubf-3000.preview.csb.app/",
+    gitHub: "https://github.com/BuenVia/Keeper_App",
     __v: 0
   },
   {

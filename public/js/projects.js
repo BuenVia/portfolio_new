@@ -18,14 +18,14 @@ const projects = [
   },
   {
     title: "Country Cards 🌍",
-    content: "A note taking app built using React. ",
+    content: "An app that performs an API call that returns country infomation cards, built using React. ",
     site: "https://countrycard.netlify.app/",
     gitHub: "https://github.com/BuenVia/countries-finder",
     __v: 0
   },
   {
     title: "Weather App 🌦",
-    content: "A note taking app built using React. ",
+    content: "A weather app, perfoming an API call based on locations, built using React. ",
     site: "https://previsto.netlify.app/",
     gitHub: "https://github.com/BuenVia/weatherReact",
     __v: 0

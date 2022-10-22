@@ -17,6 +17,20 @@ const projects = [
     __v: 0
   },
   {
+    title: "Country Cards 🌍",
+    content: "A note taking app built using React. ",
+    site: "https://keep-app-react.netlify.app/",
+    gitHub: "https://vb5ubf-3000.preview.csb.app/",
+    __v: 0
+  },
+  {
+    title: "Weather App 🌦",
+    content: "A note taking app built using React. ",
+    site: "https://keep-app-react.netlify.app/",
+    gitHub: "https://vb5ubf-3000.preview.csb.app/",
+    __v: 0
+  },
+  {
     title: "Note App 🗈",
     content: "A note taking app built using React. ",
     site: "https://keep-app-react.netlify.app/",

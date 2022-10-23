@@ -1,22 +1,28 @@
 const mongoose = require("mongoose");
+const marked = require('marked')
+const creatDomPurify = require('dompurify')
+const { JSDOM } = require('jsdom')
+const dompurify = creatDomPurify(new JSDOM().window)
+
 
 const blogSchema = new mongoose.Schema({
   title: {
     type: String,
-    require: true
+    required: true
   },
   content: {
     type: String,
-    require: true
+    required: true
   },
   auth: {
     type: String,
-    require: true
+    required: true
   },
   date: {
     type: Date,
     require: true
   }
 });
+
 
 module.exports = mongoose.model("Article", blogSchema);

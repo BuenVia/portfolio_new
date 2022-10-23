@@ -22,6 +22,8 @@ app.use(express.static(`${__dirname}/public`));
 app.get("/", pageRouter);
 app.get("/blog", pageRouter);
 app.get("/blog/:article", pageRouter);
+app.get('/post', pageRouter)
+app.post('/post', pageRouter)
 
 app.get("/admin", adminRouter);
 app.get("/admin/edit-project", adminRouter);

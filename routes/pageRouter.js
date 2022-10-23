@@ -17,12 +17,12 @@ router.get("/", (req, res) => {
       res.send(err);
     }
   })
-    .sort({ _id: -1 })
+    .sort({ createdAt: 'desc' })
     .limit(3);
 });
 
 router.get("/blog", async (req, res) => {
-  const blog = await Blog.find();
+  const blog = await Blog.find().sort({ createdAt: 'desc' });
   res.render('blog', { posts: blog })
 });
 

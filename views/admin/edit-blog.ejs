@@ -1,9 +1,0 @@
-<!--ADMIN PAGE-->
-<%- include('partials/header') %> 
-
-<% blogs.forEach(blog => { %>
-    <p><a href="/admin/edit-blog/<%= blog._id %>"><%= blog.title %></a></p>
-<% }) %>
-
-<!--ADMIN PAGE-->
-<%- include('partials/footer') %> 

@@ -15,11 +15,11 @@
                 </div>
                 <div class="card-body">
                     <p>By <%= post.auth %></p>
-                    <p><%= post.date.toLocaleString('en-GB') %></p>
-                    <p><%= post.content.substring(0, 100) %>...</p>
+                    <p><%= post.createdAt.toLocaleString('en-GB') %></p>
+                    <%- post.sanitizedHtml.substring(0, 100) %>...
                 </div>
                 <div class="card-footer">
-                    <a href="/blog/<%- post._id %> " class="btn btn-sm btn-st">Read more...</a>
+                    <a href="/blog/<%- post.slug %> " class="btn btn-sm btn-st">Read more...</a>
                 </div>
         </div>
     </div>

@@ -84,8 +84,8 @@
                                 <div class="item-container">
                                     
                                     <h4 class="card-title"><%= post.title %></h4>
-                                    <p><%= post.date.toLocaleString('en-GB') %></p>
-                                    <p class="card-text"><%= post.content.substring(0, 100) %>...</p>
+                                    <p><%= post.createdAt.toLocaleDateString('en-GB') %></p>
+                                    <p class="card-text"><%= post.markdown.substring(0, 100) %>...</p>
                                     <a href="/blog" class="btn btn-sm btn-st">Read more</a>
                                     
                         </div>

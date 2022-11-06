@@ -34,16 +34,20 @@ router.put('/admin/:id', async (req, res, next) => {
 
   function saveArticle(path) {
     return async (req, res) => {
+      if (req.body.password === process.env.BLOG_PWD) {
         let blog = req.blog
         blog.title = req.body.title
         blog.auth = req.body.auth
         blog.markdown = req.body.markdown
         try {
             blog = await blog.save()
-            res.redirect(`/admin`)
+            res.redirect(`/admin?password=correct`)
           } catch (e) {
             res.render(`/admin`, { article: blog })
           }
+      } else {
+        res.redirect('/admin?password=false')
+      }
     }
   }
 
